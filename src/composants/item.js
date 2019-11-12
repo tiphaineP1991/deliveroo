@@ -8,7 +8,9 @@ const Item = props => {
         <h5>{props.description}</h5>
         <div className="price">
           <p>{props.price} €</p>
-          <span>{props.popular}</span>
+          {props.popular === true ? (
+            <span className="popular">✶ Populaire</span>
+          ) : null}
         </div>
       </div>
       {props.picture === undefined ? null : (
