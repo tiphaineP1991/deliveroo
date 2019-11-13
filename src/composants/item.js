@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = props => {
   return (
-    <div className="Item">
+    <div className="item">
       <div className="details">
         <h4>{props.title}</h4>
         <h5>{props.description}</h5>

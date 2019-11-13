@@ -43,17 +43,11 @@ h2 {
   padding: 20px;
 }
 
-.Menu {
-  background-color: #f1f3f3;
-  padding: 20px;
-}
-
 h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
-  padding: 20px;
 }
 
 .Item {
@@ -64,7 +58,7 @@ h3 {
   margin: 15px;
   border-radius: 20px;
   height: 160px;
-  width: 34%;
+  width: 45%;
 }
 
 h4 {
@@ -119,4 +113,90 @@ p {
     "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
   padding-left: 25px;
+}
+
+.menu-panier {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f3f3;
+  padding: 20px;
+}
+
+.Panier {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.submit {
+  background-color: #5acebe;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.border {
+  border-bottom: solid #bdc0c0 1px;
+  padding: 10px;
+}
+
+.prix-panier {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sous-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.prix-total {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sign {
+  padding: 0px 15px;
+}
+
+.category-name {
+  padding: 20px;
 }

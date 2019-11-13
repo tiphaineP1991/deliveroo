@@ -10,6 +10,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [restaurants, setRestaurants] = useState({});
   const [menu, setMenu] = useState({});
+  const [products, setProducts] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get("https://deliveroo-api.now.sh/menu");
@@ -29,8 +30,16 @@ function App() {
         photo={restaurants.picture}
       ></Restaurant>
       <div>
-        <div>
-          {isLoading === true ? <p>Loading ...</p> : <Menu menu={menu}></Menu>}
+        <div className="menu-panier">
+          {isLoading === true ? (
+            <p>Loading ...</p>
+          ) : (
+            <Menu
+              menu={menu}
+              products={products}
+              setProducts={setProducts}
+            ></Menu>
+          )}
         </div>
       </div>
     </div>
